@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>Adombra | Endless Possibility, Effortlessly</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap">
+<style>
+:root{--bg:#0a1223;--bg2:#101b33;--gold:#cfa84e;--gold2:#e8cf8f;--text:#e9ecf3;--mute:#9aa6bf;--line:rgba(207,168,78,.25);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.7 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(10,18,35,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;letter-spacing:.3em;font-size:14px;color:var(--gold2)}
+.brand svg{width:26px;height:26px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:12px;letter-spacing:.18em;color:var(--mute)}
+nav ul a:hover{color:var(--gold2)}
+@media(max-width:640px){nav ul li:not(:last-child){display:none}}
+.hero{text-align:center;padding:64px 0 80px;background:radial-gradient(ellipse at 50% 0,#17274a 0,var(--bg) 70%)}
+.hero img{width:min(420px,86%);height:auto;border-radius:6px;animation:rise 1.4s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero img{animation:none}}
+.hero p{max-width:560px;margin:26px auto 30px;color:var(--mute);font-size:18px}
+.btn{display:inline-block;padding:13px 26px;border:1px solid var(--gold);color:var(--gold2);font-size:13px;letter-spacing:.14em;margin:5px;border-radius:2px;background:none;cursor:pointer;font-family:inherit}
+.btn.solid{background:var(--gold);color:#0a1223;font-weight:500}
+.btn:hover{background:var(--gold2);color:#0a1223}
+section{padding:76px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.28em;color:var(--gold);margin-bottom:12px}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:18px}
+.lead{color:var(--mute);max-width:640px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:34px}
+.card{background:var(--bg2);border:1px solid var(--line);padding:26px;border-radius:4px}
+.card h3{font-size:26px;margin:10px 0 8px}.card p{color:var(--mute);margin:0 0 16px;font-size:15px}
+.tag{font-size:11px;letter-spacing:.18em;padding:3px 10px;border-radius:20px;border:1px solid var(--line);color:var(--gold2)}
+.tag.live{background:rgba(207,168,78,.15)}
+.quiet{margin-top:26px;color:var(--mute);font-size:14px;letter-spacing:.06em}
+.quiet b{font-weight:400;color:var(--gold2);margin-right:14px}
+.split{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:30px}
+.price{color:var(--gold2);font-family:"Cormorant Garamond",serif;font-size:22px}
+.band{background:var(--bg2)}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-size:13px;text-align:center}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="mark" viewBox="0 0 64 64"><path d="M32 5 54 57H43L32 31 21 57H10Z" fill="#cfa84e"/><path d="M4 42C18 60 52 54 61 28" fill="none" stroke="#e8cf8f" stroke-width="3.5" stroke-linecap="round"/></symbol></svg>
+<nav><div class="wrap"><a class="brand" href="#top"><svg><use href="#mark"/></svg>ADOMBRA</a>
+<ul><li><a href="#about">ABOUT</a></li><li><a href="#ventures">VENTURES</a></li><li><a href="#education">EDUCATION</a></li><li><a href="#projects">PROJECTS</a></li><li><a href="#contact">CONTACT</a></li></ul></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<img src="/logo.jpg" alt="Adombra OmniHub logo">
+<p>Building solutions, learning and digital experiences that turn ideas into reality.</p>
+<a class="btn solid" href="#ventures">EXPLORE OUR VENTURES</a><a class="btn" href="#contact">PARTNER WITH US</a>
+</div></header>
+
+<section id="about"><div class="wrap">
+<div class="eyebrow">WHO WE ARE</div><h2>Beyond business. Building possibilities.</h2>
+<p class="lead">Adombra is a growing group of ventures from Cape Coast, Ghana. We build software for schools, teach and publish learning materials, and supply fresh products. We start with what is real, do it well, and add the next venture when it is ready.</p>
+</div></section>
+
+<section id="ventures" class="band"><div class="wrap">
+<div class="eyebrow">ADOMBRA VENTURES</div><h2>One name. Many ways to help.</h2>
+<div class="grid" id="live"></div>
+<div class="grid" id="soon"></div>
+<div class="quiet" id="dev"></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="eyebrow">ADOMBRA EDUCATION</div><h2>Books and live classes</h2>
+<p class="lead">Digital books you can download after payment, and live classes on Google Meet. Sample chapters let you look before you buy.</p>
+<div class="split">
+<div class="card"><span class="tag live">BOOKS</span><h3>Digital Library</h3><p>Mathematics, Economics and exam-prep titles. Pay by MoMo or card, then download securely.</p><div class="price">Catalogue opens soon</div><br><a class="btn" href="#contact">GET NOTIFIED</a></div>
+<div class="card"><span class="tag live">CLASSES</span><h3>Live on Google Meet</h3><p>Scheduled sessions with a clear date, time and fee. Your Meet link arrives once you register.</p><div class="price">Timetable coming</div><br><a class="btn" href="#contact">REGISTER INTEREST</a></div>
+</div></div></section>
+
+<section id="projects" class="band"><div class="wrap">
+<div class="eyebrow">FEATURED PROJECT</div><h2>ASMaP</h2>
+<p class="lead">The Adombra School Management and Payment Platform. It runs real school administration and fee payments at Oguaa Senior High Technical School, and it is the proof of what Adombra Digital builds.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">OUR COMMUNITY WORK</div><h2>Faith and service</h2>
+<p class="lead">Counselling, youth empowerment and giving to those in need are carried out through our sister ministry, Gracelife Avenue.</p>
+<br><a class="btn" href="#" aria-label="Visit Gracelife Avenue">VISIT GRACELIFE AVENUE</a>
+</div></section>
+
+<section id="contact" class="band"><div class="wrap" style="text-align:center">
+<div class="eyebrow">PARTNERSHIP</div><h2>Let’s build possibilities together</h2>
+<p class="lead" style="margin:0 auto 24px">Schools, companies, suppliers and customers are all welcome.</p>
+<a class="btn solid" href="mailto:hello@adombra.com">EMAIL ADOMBRA</a><a class="btn" href="https://wa.me/">WHATSAPP</a>
+</div></section>
+<footer><div class="wrap">© Adombra · Cape Coast, Ghana · Endless Possibility, Effortlessly</div></footer>
+
+<script>
+const ventures=[
+{id:"digital",name:"Adombra Digital",status:"live",line:"Websites, software and school systems, including ASMaP.",href:"#projects"},
+{id:"education",name:"Adombra Education",status:"live",line:"Digital books and live classes on Google Meet.",href:"#education"},
+{id:"fresh",name:"Adombra Fresh",status:"live",line:"Our cold store: quality frozen and fresh products.",href:"#contact"},
+{id:"supply",name:"Adombra Supply",status:"soon",line:"Procurement and institutional supplies."},
+{id:"next",name:"Adombra Next",status:"dev",line:"Retail, electronics and transport."}];
+const T={live:"LIVE",soon:"OPENING SOON"};
+const cardHTML=v=>`<div class="card"><span class="tag ${v.status}">${T[v.status]}</span><h3>${v.name}</h3><p>${v.line}</p>`+
+(v.status==="live"?`<a class="btn" href="${v.href}">EXPLORE</a>`:`<a class="btn" href="mailto:hello@adombra.com?subject=Notify me: ${v.name}">NOTIFY ME</a>`)+`</div>`;
+document.getElementById("live").innerHTML=ventures.filter(v=>v.status==="live").map(cardHTML).join("");
+document.getElementById("soon").innerHTML=ventures.filter(v=>v.status==="soon").map(cardHTML).join("");
+document.getElementById("dev").innerHTML="In development: "+ventures.filter(v=>v.status==="dev").map(v=>`<b>${v.name}</b>`).join("");
+</script></body></html>
